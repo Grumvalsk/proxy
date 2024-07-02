@@ -46,4 +46,11 @@ public class PersonaController {
 
         return new ResponseEntity<>(new EsitoBaseDTO(),  HttpStatus.OK);
     }
+
+
+    @RequestMapping(value = "/value", method = RequestMethod.GET)
+    public ResponseEntity<String> ricercaLista() throws Exception {
+
+        return new ResponseEntity<>("Sto cazzo",  HttpStatus.CREATED);
+    }
 }
